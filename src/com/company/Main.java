@@ -18,6 +18,7 @@ public class Main {
         int scal_mult = vector_a.scal_mult(vector_b);
         System.out.println("Сумма векторов=" + sum);
         System.out.println("Скалярное произведение векторов=" + scal_mult);
+        System.out.println("Коллиниарность векторов="+vector_a.colliniar(vector_b));
 
 
     }

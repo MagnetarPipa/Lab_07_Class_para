@@ -22,12 +22,29 @@ public class Vector {
 
     public int scal_mult(Vector another){
 
-        int X1=this.getX()*another.getX();
+        int X2=this.getX()*another.getX();
         int Y2=this.getY()*another.getY();
         int Z2=this.getZ()*another.getZ();
 
+        return  X2+Y2+Z2;
+    }
 
-        return  X1+Y2+Z2;
+
+    public String colliniar(Vector another){
+
+        int X2=this.getX()/another.getX();
+       int Y2=this.getY()/another.getY();
+       int Z2=this.getZ()/another.getZ();
+
+        if(X2==Y2&&Y2==Z2&&X2==Z2){
+
+            return "Коллиниарен";
+        }
+        else{
+
+            return "Не коллиниарен";
+        }
+
 
     }
 
